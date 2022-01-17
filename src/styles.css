@@ -1,0 +1,137 @@
+html {
+  width: 1218px;
+  height: 45px;
+  font-family: "Source Sans Pro", sans-serif;
+  background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/607/original/Toronto-min.jpg?1640610262);
+  background-size: 1500px 900px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+body {
+  display: block;
+  background-color: transparent;
+  margin: 0 auto;
+  font-family: "Source Sans Pro", sans-serif;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-left: -20px;
+  width: 1455px;
+}
+
+hr {
+  position: relative;
+  bottom: 60px;
+  color: #a2a8d3;
+  margin: 0 auto;
+}
+footer {
+  font-size: 12px;
+  color: #113f67;
+  font-style: italic;
+}
+.update {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-style: italic;
+  color: #a2a8d3;
+}
+.currently {
+  font-size: 30px;
+  color: #113f67;
+  font-weight: 100px;
+}
+.heading {
+  margin: 30px 0 0 0;
+  padding: 0;
+  font-size: 350%;
+  font-weight: 600px;
+  color: #113f67;
+}
+.location {
+  margin-top: -16px;
+  margin-left: 10px;
+}
+.details {
+  margin-left: 450px;
+  margin-bottom: 80px;
+  margin-top: -120px;
+  color: #38598b;
+}
+.card-group {
+  display: flex;
+  margin-top: -50px;
+  text-align: center;
+  color: #38598b;
+  padding: 10px;
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+
+.icon {
+  padding-top: 20px;
+  margin-left: 30px;
+  color: #38598b;
+  text-align: center;
+  display: flex;
+}
+
+.box {
+  width: 50%;
+  margin-left: 400px;
+  border-radius: 10px;
+}
+.container {
+  display: block;
+  padding: 50px 56px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.1);
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+.search-btn {
+  color: #ffffff;
+  background-color: #3f647e;
+  border: none;
+  padding: 4px;
+  padding-right: 10px;
+}
+.search-btn:hover {
+  background-color: #a2a8d3;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.location-btn {
+  color: #ffffff;
+  background-color: #3f647e;
+  border: none;
+  padding: 4px;
+  padding-right: 10px;
+}
+.location-btn:hover {
+  background-color: #a2a8d3;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.city {
+  width: 300px;
+}
+.degree {
+  background-color: #3f647e;
+  position: relative;
+  top: -116px;
+  left: 135px;
+}
+.degree:hover {
+  background-color: #a2a8d3;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  border-color: transparent#a2a8d3;
+}
