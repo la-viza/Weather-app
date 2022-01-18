@@ -13,8 +13,13 @@ let days = [
 ];
 let currentDay = days[now.getDay()];
 let currentHr = now.getHours();
+if (currentHr<10) {
+currentHr = `0${currentHr}`;
+}
 let currentMin = now.getMinutes();
-
+if (currentMin<10) {
+currentMin = `0${currentMin}`;
+}
 update.innerHTML = `last updated: ${currentDay}, ${currentHr}:${currentMin}`;
 
 function showWeather(response) {
