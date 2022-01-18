@@ -37,7 +37,7 @@ footer {
 }
 .card-group {
   position: relative;
-  margin-top: -23px;
+  margin-top: -42px;
   text-align: center;
   color: #38598b;
   padding: 10px;
@@ -106,13 +106,14 @@ footer {
   border: none;
 }
 
-.degree:hover {
-  background-color: #8bbae3;
-  opacity: 0.9;
-  cursor: pointer;
-  transition: all 200ms ease-in-out;
-  border-color: transparent#8bbae3;
+.degree {
+  position: relative;
+  border: none;
+  top: -33px;
+  left: 27px;
+  height: 35px;
 }
+
 .git {
   color: #022351;
 }
@@ -125,16 +126,12 @@ footer {
 }
 #temperature {
   margin-top: -13px;
+  font-size: 50px;
 }
 
 #celsius {
   color: #022351;
   background-color: #cadbea;
-  position: relative;
-  border: none;
-  top: -53px;
-  left: 47px;
-  height: 35px;
 }
 #celsius:hover {
   color: #fff;
@@ -145,11 +142,6 @@ footer {
 }
 #farenheit {
   background-color: #237b9b;
-  position: relative;
-  border: none;
-  top: -53px;
-  left: 47px;
-  height: 35px;
 }
 #farenheit:hover {
   color: #022351;
