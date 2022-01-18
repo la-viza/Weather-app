@@ -105,14 +105,7 @@ footer {
   border-radius: 4px;
   border: none;
 }
-.degree {
-  background-color: #237b9b;
-  position: relative;
-  border: none;
-  top: -53px;
-  left: 47px;
-  height: 35px;
-}
+
 .degree:hover {
   background-color: #8bbae3;
   opacity: 0.9;
@@ -132,4 +125,36 @@ footer {
 }
 #temperature {
   margin-top: -13px;
+}
+
+#celsius {
+  color: #022351;
+  background-color: #cadbea;
+  position: relative;
+  border: none;
+  top: -53px;
+  left: 47px;
+  height: 35px;
+}
+#celsius:hover {
+  color: #fff;
+  background-color: #237b9b;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+#farenheit {
+  background-color: #237b9b;
+  position: relative;
+  border: none;
+  top: -53px;
+  left: 47px;
+  height: 35px;
+}
+#farenheit:hover {
+  color: #022351;
+  background-color: #cadbea;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
 }
