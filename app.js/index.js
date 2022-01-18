@@ -21,7 +21,7 @@ function showWeather(response) {
   document.querySelector("#heading").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = `${Math.round(
     response.data.main.temp
-  )} °C`;
+  )}`;
   document.querySelector(
     "#humidity"
   ).innerHTML = `💧 Humidity: ${response.data.main.humidity}%`;
