@@ -5,7 +5,9 @@ hr {
   margin: 0 auto;
 }
 footer {
+  display: block;
   text-align: center;
+  padding: 0px;
   font-size: 12px;
   color: #113f67;
   font-style: italic;
@@ -33,7 +35,7 @@ footer {
   margin-top: -16px;
   margin-left: 10px;
 }
-.details {
+.description {
   margin-left: 450px;
   margin-bottom: 80px;
   margin-top: -120px;
@@ -59,7 +61,7 @@ footer {
 
 .box {
   width: 50%;
-  margin-left: 400px;
+  margin: 25px 350px 5px;
   border-radius: 10px;
   font-family: "Source Sans Pro", sans-serif;
   background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/055/original/richard-horvath-cPccYbPrF-A-unsplash.jpg?1642424168);
@@ -69,6 +71,8 @@ footer {
 }
 .container {
   display: block;
+  max-width: 750px;
+  max-height: 570px;
   padding: 50px 56px;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.1);
@@ -106,21 +110,22 @@ footer {
 .degree {
   background-color: #237b9b;
   position: relative;
+  border: none;
   top: -93px;
   left: 121px;
 }
 .degree:hover {
-  background-color: #a2a8d3;
+  background-color: #8bbae3;
   opacity: 0.9;
   cursor: pointer;
   transition: all 200ms ease-in-out;
-  border-color: transparent#a2a8d3;
+  border-color: transparent#8bbae3;
 }
 .git {
   color: #022351;
 }
 .git:hover {
-  background-color: #022351;
+  color: #022351;
   opacity: 0.9;
   cursor: pointer;
   transition: all 200ms ease-in-out;
