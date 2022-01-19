@@ -107,7 +107,14 @@ footer {
   border-radius: 4px;
   border: none;
 }
-
+.units {
+  position: relative;
+  left: 85px;
+  bottom: 63px;
+  background-color: #237b9b;
+  font-size: 20px;
+  width: 57px;
+}
 .description {
   position: relative;
   border: none;
@@ -131,31 +138,13 @@ footer {
   margin-left: 15px;
   font-size: 45px;
 }
-
-#celsius {
-  color: #022351;
-  background-color: #cadbea;
+#fahrenheit-link {
+  color: #cadbea;
+  text-decoration: none;
+  cursor: default;
 }
-#celsius:hover {
-  color: #fff;
-  background-color: #237b9b;
-  opacity: 0.9;
-  cursor: pointer;
-  transition: all 200ms ease-in-out;
-}
-#farenheit {
-  background-color: #237b9b;
-}
-#farenheit:hover {
-  color: #022351;
-  background-color: #cadbea;
-  opacity: 0.9;
-  cursor: pointer;
-  transition: all 200ms ease-in-out;
-}
-
-.btn {
-  bottom: 67px;
-  left: 80px;
-  font-size: 15px;
+#celsius-link {
+  color: #cadbea;
+  text-decoration: none;
+  cursor: default;
 }
