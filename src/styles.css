@@ -6,6 +6,12 @@ footer {
   color: #113f67;
   font-style: italic;
 }
+a {
+  cursor: default;
+  color: #237b9b;
+  text-decoration: none;
+}
+
 .update {
   margin: 0;
   padding: 0;
@@ -109,12 +115,19 @@ footer {
 }
 .units {
   position: relative;
+  text-decoration: none;
   left: 85px;
   bottom: 63px;
-  background-color: #237b9b;
   font-size: 20px;
   width: 57px;
 }
+
+.units .active {
+  color: #cadbea;
+  text-decoration: none;
+  cursor: default;
+}
+
 .description {
   position: relative;
   border: none;
@@ -137,14 +150,4 @@ footer {
   margin-top: -23px;
   margin-left: 15px;
   font-size: 45px;
-}
-#fahrenheit-link {
-  color: #cadbea;
-  text-decoration: none;
-  cursor: default;
-}
-#celsius-link {
-  color: #cadbea;
-  text-decoration: none;
-  cursor: default;
 }
