@@ -43,14 +43,8 @@ a {
   margin-top: -120px;
   color: #cadbea;
 }
-.card-group {
-  position: relative;
-  margin-top: -42px;
-  text-align: center;
-  color: #38598b;
-  padding: 10px;
-  padding-bottom: 30px;
-  font-size: 15px;
+#card {
+  background-color: #ffffff;
 }
 
 .icon {
@@ -150,4 +144,12 @@ a {
   margin-top: -23px;
   margin-left: 15px;
   font-size: 45px;
+}
+.row > * {
+  flex-shrink: 22;
+  width: 20%;
+  max-width: 20%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
 }

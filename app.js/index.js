@@ -22,6 +22,33 @@ currentMin = `0${currentMin}`;
 }
 update.innerHTML = `last updated: ${currentDay}, ${currentHr}:${currentMin}`;
 
+function displayForecast() {
+let forecastElement = document.querySelector("#forecast");
+
+let forecastHTML = `<div class="row">`;
+let days = ["Sat", "Sun", "Mon","Tue", "Wed","Thu"];
+days.forEach(function (day) {
+forecastHTML = 
+forecastHTML +
+`<div class="card" "width: 18rem">
+          <div class="col-12">
+                <i class="fas fa-cloud fa-2x icon"></i>
+                <div>    <h5>${day}</h5>
+                  <span>
+                    0°/-5 °C <br />
+                    32°/23 °F
+                  </span>  
+              </div> 
+        </div>
+        </div>
+`;
+})
+
+forecastHTML=forecastHTML+`</div>`;
+forecastElement.innerHTML= forecastHTML;
+}
+
+
 function showWeather(response) {
   document.querySelector("#heading").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = `${Math.round(
@@ -85,6 +112,7 @@ fahrenheitLink.classList.remove("active");
   temperatureElement.innerHTML=Math.round(celsiusTemperature);  
 }
 
+
 let celsiusTemperature=null;
 
 let button = document.querySelector("#current-location-btn");
@@ -97,3 +125,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 searchCity("Toronto");
+displayForecast();
