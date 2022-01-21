@@ -1,9 +1,9 @@
-footer {
+.footer {
   display: block;
   text-align: center;
   padding: 0px;
   font-size: 12px;
-  color: #113f67;
+  color: #cadbea;
   font-style: italic;
 }
 a {
@@ -43,13 +43,10 @@ a {
   margin-top: -120px;
   color: #cadbea;
 }
-#card {
-  background-color: #ffffff;
-}
 
 .icon {
   padding-top: 20px;
-  margin-left: 30px;
+  margin-left: 19px;
   color: #38598b;
   text-align: center;
   display: flex;
@@ -68,7 +65,7 @@ a {
 .container {
   display: block;
   max-width: 750px;
-  max-height: 570px;
+  max-height: 600px;
   padding: 50px 56px;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.1);
@@ -78,6 +75,7 @@ a {
   color: #ffffff;
   background-color: #237b9b;
   margin: 0px 4px;
+  margin-top: 25px;
   border: none;
   padding: 4px;
   padding-right: 10px;
@@ -121,6 +119,19 @@ a {
   text-decoration: none;
   cursor: default;
 }
+.card {
+  position: relative;
+  margin-top: -42px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #38598b;
+  padding: 10px;
+  padding-bottom: 30px;
+  font-size: 15px;
+  width: 100%;
+  border-radius: 7px;
+  opacity: 0.9;
+}
 
 .description {
   position: relative;
@@ -131,25 +142,17 @@ a {
 }
 
 .git {
-  color: #022351;
+  color: #cadbea;
 }
 .git:hover {
-  color: #022351;
+  color: #a2a8d3;
   opacity: 0.9;
   cursor: pointer;
   transition: all 200ms ease-in-out;
-  border-color: transparent#022351;
+  border-color: transparent#a2a8d3;
 }
 #temperature {
   margin-top: -23px;
   margin-left: 15px;
   font-size: 45px;
-}
-.row > * {
-  flex-shrink: 22;
-  width: 20%;
-  max-width: 20%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-  margin-top: var(--bs-gutter-y);
 }

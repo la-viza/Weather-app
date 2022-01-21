@@ -26,21 +26,20 @@ function displayForecast() {
 let forecastElement = document.querySelector("#forecast");
 
 let forecastHTML = `<div class="row">`;
-let days = ["Sat", "Sun", "Mon","Tue", "Wed","Thu"];
+let days = ["Sat", "Sun", "Mon","Tue", "Wed", "Thu"];
 days.forEach(function (day) {
 forecastHTML = 
 forecastHTML +
-`<div class="card" "width: 18rem">
-          <div class="col-12">
+`
+   <div class="col">
                 <i class="fas fa-cloud fa-2x icon"></i>
-                <div>    <h5>${day}</h5>
-                  <span>
+                  <h5 class="card-title">${day}</h5>
+                  <span class="card-text">
                     0°/-5 °C <br />
                     32°/23 °F
-                  </span>  
-              </div> 
+                  </span>
         </div>
-        </div>
+       
 `;
 })
 
