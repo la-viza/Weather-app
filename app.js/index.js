@@ -37,7 +37,8 @@ let forecastElement = document.querySelector("#forecast");
 
 let forecastHTML = `<div class="row">`;
 
-forecast.forEach(function (forecastDay) {
+forecast.forEach(function (forecastDay, index) {
+  if (index < 6) {
 forecastHTML = 
 forecastHTML +
 `
@@ -51,10 +52,12 @@ forecastHTML +
         </div>
        
 `;
+}
 })
 forecastHTML=forecastHTML+`</div>`;
 forecastElement.innerHTML= forecastHTML;
 }
+
 
 function getForecast(coordinates) {
   let apiKey= "15af5a3ccf0340783b542c810542f065";
