@@ -31,6 +31,7 @@ return days[day];
 }
 
 function displayForecast(response) {
+console.log (response.data);
 let forecast = response.data.daily;
 
 let forecastElement = document.querySelector("#forecast");
@@ -46,8 +47,7 @@ forecastHTML +
               <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" alt"" width="42" />
                   <h5 class="card-title">${formatDay(forecastDay.dt)}</h5>
                   <span class="card-text">
-                    ${Math.round(forecastDay.temp.max)}°/${Math.round(forecastDay.temp.min)}°<br />
-                    32°/23 °F
+                    ${Math.round(forecastDay.temp.max)}°/${Math.round(forecastDay.temp.min)}°
                   </span>
         </div>
        
@@ -60,12 +60,13 @@ forecastElement.innerHTML= forecastHTML;
 
 
 function getForecast(coordinates) {
-  let apiKey= "15af5a3ccf0340783b542c810542f065";
+let apiKey= "15af5a3ccf0340783b542c810542f065";
 let apiUrl=`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayForecast);
 }
 
 function showWeather(response) {
+  console.log(response.data);
   document.querySelector("#heading").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = `${Math.round(
     response.data.main.temp
@@ -76,6 +77,7 @@ function showWeather(response) {
   document.querySelector("#wind").innerHTML = `💨 Wind: ${Math.round(
     response.data.wind.speed
   )} km/h`;
+  document.querySelector("#feels-like").innerHTML=`🌡 Feels like: ${Math.round(response.data.main.feels_like)} C°`;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
     let iconElement = document.querySelector ("#main-icon");
