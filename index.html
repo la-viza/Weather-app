@@ -26,10 +26,10 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <div class="d-flex p-2 bd-highlight box">
-      <div class="container border shadow-sm rounded flex">
+    <div class="conatiner d-flex p-2 bd-highlight box mt-5 ">
+      <div class="cntr shadow-sm rounde border border-white justify-content-evenly">
         <form class="row" id="seacrh-form" width="500px">
-          <div class="col-auto">
+          <div class="col-sm">
             <input
               type="text"
               placeholder="Enter a city..."
@@ -40,13 +40,13 @@
             />
             <input
               type="submit"
-              value="🔍 Search"
+              value="🔍"
               class="search-btn shadow rounded"
               id="submit-button"
             />
             <input
               type="submit"
-              value="📍Current location"
+              value="📍"
               class="location-btn shadow rounded"
               id="current-location-btn"
             />
@@ -55,13 +55,13 @@
         <div>
           <p class="heading" id="heading"></p>
           <p class="update" id="up-date"></p>
-          <img src="" alt="" id="main-icon" width="70px" />
+          <img src="" alt="" id="main-icon" width="70px" class="main-icon" />
           <p class="currently" id="description"><br /></p>
           <p class="currently" id="temperature"></p>
           <div class="units"> <a href="#" id="celsius-link">°C | <a href="#" id="fahrenheit-link">°F</a></div>
            
         </div>
-        <div class="description">
+        <div class="description col-sm">
           <span class="row" id="humidity"></span>
           <span class="row" id="wind"></span>
           <span class="row" id="feels-like"></span>
@@ -70,13 +70,16 @@
         <div class="weather-forecast">
            <span class="card" id="forecast"> </span>
            </div>
-    <div class="footer">
+    
+   
+    <script src="app.js/index.js"></script>
+<footer>
       <a class="git" href="https://github.com/la-viza/Weather-app"
         >Open-source code
       </a>
       by Luiza Moshkin
-    </div>
-    <script src="app.js/index.js"></script>
+   </footer>
+   </div>
   </body>
   
 </html>
