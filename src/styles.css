@@ -161,7 +161,7 @@ footer {
 
 @media (max-width: 1300px) {
   .cntr {
-    max-width: ;
+    max-width: 100%;
     justify-content: center;
     text-align: center;
   }
