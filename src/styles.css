@@ -51,10 +51,10 @@ a {
   background-size: 800px 1200px;
   background-repeat: no-repeat;
   background-color: #a2a8d3;
-
   overflow: hidden;
 }
 .cntr {
+  position: relative;
   max-width: 100%;
   height: auto;
   justify-content: space-around;
@@ -161,14 +161,16 @@ footer {
 
 @media (max-width: 1300px) {
   .cntr {
+    position: relative;
     max-width: 100%;
     justify-content: center;
     text-align: center;
   }
 
   .box {
+    position: fixed;
     max-width: 100%;
-    height: 100%;
+    height: auto;
     margin: auto;
     display: block;
   }
