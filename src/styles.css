@@ -168,11 +168,11 @@ footer {
   }
 
   .box {
-    position: fixed;
     max-width: 100%;
     height: auto;
     margin: auto;
     display: block;
+    background-size: cover;
   }
 
   .city {
