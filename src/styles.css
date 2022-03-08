@@ -1,6 +1,14 @@
+:root {
+  --primary-color: #cadbea;
+  --theme-color: #3db7c4;
+  --links-color: #237b9b;
+  --second-color: #38598b;
+  --third-color: #a2a8d3;
+}
+
 a {
   cursor: default;
-  color: #237b9b;
+  color: var(--links-color);
   text-decoration: none;
 }
 .container {
@@ -13,11 +21,11 @@ a {
   padding: 0;
   font-size: 15px;
   font-style: italic;
-  color: #a2a8d3;
+  color: var(--third-color);
 }
 .currently {
   font-size: 30px;
-  color: #cadbea;
+  color: var(--primary-color);
   font-weight: 100px;
   margin-top: -53px;
   margin-left: 70px;
@@ -27,7 +35,7 @@ a {
   padding: 0;
   font-size: 350%;
   font-weight: 600px;
-  color: #3db7c4;
+  color: var(--theme-color);
 }
 .location {
   margin-top: -16px;
@@ -37,12 +45,12 @@ a {
   margin-left: 370px;
   margin-bottom: 80px;
   margin-top: -130px;
-  color: #cadbea;
+  color: var(--primary-color);
 }
 
 .box {
   position: relative;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   margin: 20px 412px 5px;
   border-radius: 10px;
@@ -50,7 +58,7 @@ a {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/055/original/richard-horvath-cPccYbPrF-A-unsplash.jpg?1642424168);
   background-size: 800px 1200px;
   background-repeat: no-repeat;
-  background-color: #a2a8d3;
+  background-color: var(--second-color);
   overflow: hidden;
 }
 .cntr {
@@ -65,8 +73,8 @@ a {
 
 .search-btn {
   justify-content: flex-end;
-  color: #ffffff;
-  background-color: #3db7c4;
+  color: var(--primary-color);
+  background-color: var(--theme-color);
   margin: 0px 4px;
   margin-top: 25px;
   border: none;
@@ -74,21 +82,21 @@ a {
   padding-right: 10px;
 }
 .search-btn:hover {
-  background-color: #237b9b;
+  background-color: var(--links-color);
   opacity: 0.9;
   cursor: pointer;
   transition: all 200ms ease-in-out;
 }
 .location-btn {
   justify-content: flex-end;
-  color: #ffffff;
-  background-color: #3db7c4;
+  color: var(--primary-color);
+  background-color: var(--theme-color);
   border: none;
   padding: 4px 10px;
   padding-right: 10px;
 }
 .location-btn:hover {
-  background-color: #237b9b;
+  background-color: var(--links-color);
   opacity: 0.9;
   cursor: pointer;
   transition: all 200ms ease-in-out;
@@ -111,7 +119,7 @@ a {
 }
 
 .units .active {
-  color: #cadbea;
+  color: var(--primary-color);
   text-decoration: none;
   cursor: default;
 }
@@ -119,8 +127,8 @@ a {
   justify-content: center;
   margin-top: -42px;
   text-align: center;
-  background-color: #ffffff;
-  color: #38598b;
+  background-color: fffff;
+  color: var(--second-color);
   padding: 10px 40px 20px;
   font-size: 15px;
   width: 100%;
@@ -133,25 +141,25 @@ a {
   margin-left: 285px;
   margin-bottom: 80px;
   margin-top: -148px;
-  color: #cadbea;
+  color: var(--primary-color);
 }
 footer {
   display: block;
   text-align: center;
   padding: 0px;
   font-size: 12px;
-  color: #cadbea;
+  color: var(--primary-color);
   font-style: italic;
 }
 .git {
-  color: #cadbea;
+  color: var(--primary-color);
 }
 .git:hover {
-  color: #a2a8d3;
+  color: var(--third-color);
   opacity: 0.9;
   cursor: pointer;
   transition: all 200ms ease-in-out;
-  border-color: transparent#a2a8d3;
+  border-color: transparent var(--third-color);
 }
 #temperature {
   margin-top: -23px;
