@@ -41,7 +41,7 @@ a {
 }
 
 .box {
-  position: fixed;
+  position: relative;
   max-width: 100%;
   height: auto;
   margin: 20px 412px 5px;
@@ -161,20 +161,21 @@ footer {
 
 @media (max-width: 1300px) {
   .cntr {
+    max-width: ;
     justify-content: center;
     text-align: center;
   }
 
   .box {
     max-width: 100%;
-    height: auto;
+    height: 100%;
     margin: auto;
     display: block;
   }
 
   .city {
-    justify-content: flex-start;
-    width: 70%;
+    padding: 0;
+    width: 60%;
     height: 31px;
     text-align: center;
   }
@@ -226,7 +227,7 @@ footer {
     justify-content: center center;
     position: relative;
     font-size: 10px;
-    margin-left: 100px;
+    margin-left: 90px;
     margin-bottom: 50px;
     margin-top: -12px;
     color: #cadbea;
