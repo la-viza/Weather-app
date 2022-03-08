@@ -41,6 +41,7 @@ a {
 }
 
 .box {
+  position: fixed;
   max-width: 100%;
   height: auto;
   margin: 20px 412px 5px;
@@ -49,6 +50,7 @@ a {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/055/original/richard-horvath-cPccYbPrF-A-unsplash.jpg?1642424168);
   background-size: 800px 1200px;
   background-repeat: no-repeat;
+  background-color: #a2a8d3;
 
   overflow: hidden;
 }
@@ -62,6 +64,7 @@ a {
 }
 
 .search-btn {
+  justify-content: flex-end;
   color: #ffffff;
   background-color: #3db7c4;
   margin: 0px 4px;
@@ -77,6 +80,7 @@ a {
   transition: all 200ms ease-in-out;
 }
 .location-btn {
+  justify-content: flex-end;
   color: #ffffff;
   background-color: #3db7c4;
   border: none;
@@ -90,6 +94,7 @@ a {
   transition: all 200ms ease-in-out;
 }
 .city {
+  justify-content: flex-start;
   margin: none !important;
   width: 381px;
   height: 30px;
@@ -124,10 +129,11 @@ a {
 }
 
 .description {
-  border: none;
-  top: -34px;
-  left: 38px;
-  height: 35px;
+  position: relative;
+  margin-left: 285px;
+  margin-bottom: 80px;
+  margin-top: -148px;
+  color: #cadbea;
 }
 footer {
   display: block;
@@ -153,47 +159,54 @@ footer {
   font-size: 45px;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1300px) {
+  .cntr {
+    justify-content: center;
+    text-align: center;
+  }
+
   .box {
-    justify-content: space-evenly;
     max-width: 100%;
     height: auto;
     margin: auto;
+    display: block;
   }
 
   .city {
-    width: 179px;
+    justify-content: flex-start;
+    width: 70%;
     height: 31px;
     text-align: center;
   }
 
   .search-btn {
+    justify-content: flex-end;
     margin: auto;
     padding: 3px 6px;
   }
   .location-btn {
+    justify-content: flex-end;
     margin: auto;
     padding: 3px 6px;
   }
 
   .heading {
+    text-align: center;
     margin-top: 15px;
     padding: 0;
     font-size: 300%;
+  }
+  .update {
+    text-align: center;
   }
 
   #temperature {
     font-size: 34px;
     text-align: center;
-    margin-left: -23px;
+    margin-left: -15px;
   }
   .units {
-    text-align: center;
-    position: relative;
-    text-decoration: none;
-    margin: 23px 0 0 50px;
-    font-size: 15px;
-    width: 57px;
+    font-size: 0px;
   }
 
   .currently {
@@ -201,7 +214,20 @@ footer {
     color: #cadbea;
     font-weight: 100px;
     margin-top: -53px;
-    margin-left: 60px;
+    margin-left: 50px;
     text-align: center;
+  }
+  #main-icon {
+    margin-left: -90px;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 10px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: -12px;
+    color: #cadbea;
   }
 }
