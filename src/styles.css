@@ -223,6 +223,7 @@ footer {
   .description {
     display: flex;
     flex-direction: column;
+    justify-content: center center;
     position: relative;
     font-size: 10px;
     margin-left: 100px;
